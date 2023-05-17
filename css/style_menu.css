@@ -1,0 +1,191 @@
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+
+    nav{
+        display: flex;
+        height: 80px;
+        width: 100%;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px 0 100px;
+        flex-wrap: wrap;
+
+        top: 0;
+        position: sticky;
+        white-space: nowrap;
+        z-index: 500;
+
+        border: none;
+        border-bottom: 2px solid #a1a1a1;
+    }
+    nav .logo{
+        height: 75px;
+        margin: auto 0 auto 0;
+    }
+
+    nav .logo img{
+        height: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        z-index: 1000;
+    }
+
+    nav ul li{
+        margin: 0 5px;
+    }
+
+    nav ul li a,
+    nav ul li button a{
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+    .dropdown-content button{
+        color: #000;
+        border: none;
+        margin: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover,
+    nav ul li button a:hover,
+    .dropdown-content button:hover{
+        color: #fff;
+        background: #308;
+    }
+
+    nav .menu-btn i{
+        color: #000;
+        cursor: pointer;
+        display: none;
+    }
+
+    .fixando {
+        animation: fixar .5s linear forwards;
+        visibility: visible;
+    }
+
+    @keyframes fixar {
+        0%{
+            overflow: hidden;
+        }
+
+        100%{
+            overflow: hidden;
+        }
+    }
+
+
+
+
+    .dropbtn {
+        border: none;
+    }
+
+    .dropdown {
+        position: static;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        margin-top: 5px;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+
+    .dropdown-content button {
+        display: block;
+    }
+
+
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+
+
+
+
+    /* ================= SE TELA MENOR QUE 920px ================ */
+    @media only screen and (max-width: 920px) {
+
+        nav{
+            padding: 0 40px 0 40px;
+        }
+
+        nav .logo{
+            height: 55px;
+            margin: auto 0 auto 0;
+        }
+
+        nav .menu-btn i{
+            display: block;
+        }
+        nav ul{
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            background-color: #fff;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            display: block;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        nav ul.open{
+            left: 0;
+        }
+        nav ul li{
+            width: 100%;
+            margin: 50px 0;
+        }
+        nav ul li a,
+        nav ul li button a,
+        .dropdown-content button {
+            font-size: 23px;
+        }
+        nav ul li a.active,
+        nav ul li a:hover,
+        nav ul li a:focus,
+        nav ul li button a:hover,
+        nav ul li button a:focus{
+            background: none;
+            color: #308;
+            text-shadow: 0px 0px 3px #303;
+        }
+
+
+        .dropdown-content button:hover,
+        .dropdown-content button:focus{
+            background: #308;
+            color: white;
+            text-shadow: 0px 0px 3px #303;
+        }
+    }
