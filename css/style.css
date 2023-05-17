@@ -1,0 +1,187 @@
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body{
+		font-family: Arial;
+		background-color: white;
+	}
+
+	::-webkit-scrollbar{
+		visibility: hidden;
+		width: 0px;
+	}
+
+	.principal{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
+	/* ======================= INTRODUÇÃO ======================= */
+	.intro-glossary{
+		background-color: #B0C4DE;
+		padding: 20px;
+		margin: 10px 0px;
+		width: 100%;
+	}
+
+	.intro-glossary .content-intro{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.content-intro .text_intro{
+		width: 650px;
+		position: absolute;
+		padding: 20px;
+		background-color: rgba(242, 242, 242, 0.6);
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.9);
+	}
+
+	.text_intro h1{
+		margin: 10px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.text_intro p{
+		text-align: left;
+		color: #353535;
+		font-size: 20px;
+		margin: 10px;
+	}
+
+	.img_intro{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.img_intro img{
+		width: 1000px;
+		margin: 10px;
+	}
+	/* ===================== FIM INTRODUÇÃO ===================== */
+
+
+
+
+
+
+	/* ======================== GLOSSÁRIO ======================= */
+	.content-glossary{
+		width: 80%;
+		margin: 20px;
+	}
+
+	.content-glossary h1{
+		color: black;
+		padding: 10px 50px;
+		margin-bottom: 10px;
+		text-align: center;
+		text-decoration: underline;
+		text-transform: uppercase;
+		text-shadow: 0px 0px 5px darkslateblue;
+	}
+
+	.content-glossary h2{
+		cursor: help;
+		padding: 10px 50px;
+		text-transform: uppercase;
+		background-color: #B0C4DE;
+		border: solid darkslateblue;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+
+	div.text-glossary{
+		background-color: white;
+		border-left: solid darkblue;
+		border-right: solid darkblue;
+		padding: 1rem;
+		margin: 1rem;
+		color: #fff;
+		font-weight: 600;
+		display: none;
+	}
+
+	div.text-glossary p{
+		margin: 0;
+		color: #353535;
+	}
+
+	.btn {
+		cursor: pointer;
+		margin-bottom: 14px;
+	}
+	/* ====================== FIM GLOSSÁRIO ===================== */
+
+
+
+
+
+
+	#idioma-indisponivel,
+	#traducao-incompleta {
+		display: none;
+	}
+
+	.alert {
+		width: 100%;
+		font-size: 20px;
+		padding: 20px;
+		margin: 10px 0;
+		text-align: center;
+		position: static;
+	}
+
+	.alert-info{background-color: lightblue;}
+
+	.alert-danger{
+		color: white;
+		background-color: red;
+	}
+
+
+
+
+
+	/* =================== *** IMPORTANTE *** =================== */
+	/* ======================= AREA LIBRAS ====================== */
+	.access-button{
+		width: 40% !important;
+		border-radius: 50px !important;
+		border: 5px solid #ffffff1f !important;
+	}
+
+
+
+
+	@media screen and (max-width: 425px) {
+
+		.content-intro .text_intro{
+			width: 85%;
+			padding: 0px;
+		}
+
+		.text_intro h1{
+			font-size: 1em;
+		}
+
+		.text_intro p{
+			font-size: 15px;
+		}
+
+		.img_intro img{
+			width: 1100px;
+			margin: 10px;
+		}
+	}
