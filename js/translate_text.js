@@ -14,6 +14,9 @@
       'HomePage': 'Home Page',
       'Language': 'Language',
 
+      'Portuguese': 'Portuguese',
+      'English': 'English',
+
       'TitleIntro': 'Glossary',
       'intro': 'Information Technology (IT) is an area in constant evolution and full of terms and '+
               'acronyms that can be confusing for those who are not familiar with it. This glossary '+
@@ -290,7 +293,9 @@
       'Title40': 'YAML',
       'contentText40': 'YAML - Human readable data markup language:\n\n'+
                       'It is used to represent structured data clearly and concisely. YAML is used in many applications '+
-                      'including software configuration, data representation, data exchange, among others.'
+                      'including software configuration, data representation, data exchange, among others.',
+
+      'copyright': '© 2023 All rights reserved'
     },
 
 
@@ -302,6 +307,9 @@
     'pt-br': {
       'HomePage': 'Página Inicial',
       'Language': 'Idioma',
+
+      'Portuguese': 'Português',
+      'English': 'Inglês',
 
       'TitleIntro': 'Glossário',
       'intro': 'A Tecnologia da Informação (TI) é uma área em constante evolução e repleta de '+
@@ -600,7 +608,9 @@
                       'YAML é usado em muitos aplicativos, incluindo configuração de software, '+
                       'representação de dados, intercâmbio de dados, entre outros. O YAML usa espaços '+
                       'e endentação para definir a estrutura dos dados, tornando-o fácil de ler e entender. '+
-                      'Ele também suporta o uso de comentários, tornando-o útil para a documentação de dados.'
+                      'Ele também suporta o uso de comentários, tornando-o útil para a documentação de dados.',
+
+      'copyright': '© 2023 Todos os direitos reservados'
     }
   };
 
