@@ -32,8 +32,10 @@
           <div class="dropdown">
             <button class="dropbtn"> <a data-lang-str="Language">  </a> </button>
             <div class="dropdown-content">
-              <button class="btn" name="btn-translate" data-lang="pt-br">Português</button>
-              <button class="btn" name="btn-translate" data-lang="en">Inglês</button>
+              <button class="btn" name="btn-translate" data-lang="pt-br" data-lang-str="Portuguese" onclick="menuShow(); action()"> </button>
+
+              <button class="btn" name="btn-translate" data-lang="en" data-lang-str="English" onclick="menuShow(); action()"> </button>
+
             </div>
           </div>
 
@@ -409,9 +411,6 @@
 
 
 
-
-
-
   <!-- ============= AREA LIBRAS ============= -->
 
   	<div vw class="enabled">
@@ -430,12 +429,9 @@
 
 
 
-
-
-
   <!-- ======================== RODAPÉ ======================== -->
     <footer>
-      <h4>© 2023 Todos os direitos reservados</h4>
+      <h4 data-lang-str="copyright">© 2023 Todos os direitos reservados</h4>
       <div class="sociais">
         <div class="social">
           <a href="https://api.whatsapp.com/send?phone=5511979604376" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
