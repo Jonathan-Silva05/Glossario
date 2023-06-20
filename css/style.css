@@ -19,6 +19,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		max-width: 1024px;
+		margin: auto auto;
 	}
 
 
@@ -153,14 +155,16 @@
 
 
 
-
 	/* =================== *** IMPORTANTE *** =================== */
+	/* ======== CASO QUERIA ESTILIZAR O BOTÃO DAS LIBRAS ======== */
+
+
 	/* ======================= AREA LIBRAS ====================== */
-	.access-button{
+	/*.access-button{
 		width: 40% !important;
 		border-radius: 50px !important;
 		border: 5px solid #ffffff1f !important;
-	}
+	}*/
 
 
 
